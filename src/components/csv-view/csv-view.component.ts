@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './csv-view.component.html',
   styleUrls: ['./csv-view.component.css'],
 })
-export class CsvView {}
+export class CsvView extends Component {
+  csvText = 'This is from angular';
+
+  onShow() {
+    alert(this.csvText);
+  }
+}

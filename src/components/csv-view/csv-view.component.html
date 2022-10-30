@@ -1,3 +1,19 @@
-<div>
-  <span>CSV View</span>
-</div>
+<section>
+  <h1>CSV Viewer</h1>
+  <hr />
+</section>
+<section>
+  <div>
+    <label>Paste your CSV:</label> <br />
+    <textarea
+      id="csvText"
+      name="csvText"
+      rows="80"
+      cols="80"
+      style="height:250px; width:620px;"
+      [(ngModel)]="csvText"
+    ></textarea>
+    <br />
+    <button id="btnShow" (click)="(onShow)">Go</button>
+  </div>
+</section>
